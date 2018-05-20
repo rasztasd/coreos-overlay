@@ -16,3 +16,8 @@
 =app-emulation/rkt-13.0
 
 >=dev-vcs/git-2.17
+
+# Block Linux 4.18 to test 4.14.
+>=sys-kernel/coreos-kernel-4.15
+>=sys-kernel/coreos-modules-4.15
+>=sys-kernel/coreos-sources-4.15
