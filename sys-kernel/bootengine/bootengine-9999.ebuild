@@ -10,7 +10,7 @@ CROS_WORKON_REPO="git://github.com"
 if [[ "${PV}" == 9999 ]]; then
 	KEYWORDS="~amd64 ~arm ~arm64 ~x86"
 else
-	CROS_WORKON_COMMIT="107ce54747f739dad4b56f9753852341bb759a4d"
+	CROS_WORKON_COMMIT="5b4de461fc3f8ddc33e5b5e068133286196318f"
 	KEYWORDS="amd64 arm arm64 x86"
 fi
 
@@ -21,6 +21,9 @@ SRC_URI=""
 
 LICENSE="BSD"
 SLOT="0/${PVR}"
+
+RDEPEND="app-crypt/tpm2-tools"
+DEPEND="${RDEPEND}"
 
 src_install() {
 	insinto /usr/lib/dracut/modules.d/
