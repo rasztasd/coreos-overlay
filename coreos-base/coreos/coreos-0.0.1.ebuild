@@ -83,6 +83,7 @@ RDEPEND="${RDEPEND}
 		net-fs/cifs-utils
 		sys-auth/realmd
 		sys-auth/sssd
+		app-crypt/tpm2-tools
 	)"
 
 RDEPEND="${RDEPEND}
