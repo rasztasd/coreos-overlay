@@ -27,7 +27,8 @@ IUSE="cros_host symlink-usr"
 DEPEND="sys-apps/systemd
 	!coreos-base/coreos-base
 	!<sys-libs/glibc-2.17-r1
-	!<=sys-libs/nss-usrfiles-2.18.1_pre"
+	!<=sys-libs/nss-usrfiles-2.18.1_pre
+  app-crypt/tpm2-tools"
 
 # Make sure coreos-init is not installed in the SDK
 RDEPEND="${DEPEND}

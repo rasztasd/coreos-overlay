@@ -11,6 +11,7 @@ IUSE=""
 
 DEPEND=""
 RDEPEND="${DEPEND}"
+EGIT_COMMIT="74037d3c15b9f9d98f9b50ca4f1c1a99d239d751"
 
 inherit git-r3
 
